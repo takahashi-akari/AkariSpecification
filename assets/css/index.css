@@ -3,24 +3,15 @@
  * MIT License
  * Copyright (c) 2022 Takahashi Akari <https://akari.mn>
  **/
-@font-face {
-  font-family: "HackGen";
-  font-weight: normal;
-  src: url("../fonts/HackGenConsole-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "HackGen";
-  font-weight: bold;
-  src: url("../fonts/HackGenConsole-Bold.ttf") format("truetype");
-}
 * {
   box-sizing: border-box;
+  font-family: "Sawarabi Mincho", monospace;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "HackGen", sans-serif;
+  font-family: "Sawarabi Mincho", monospace;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -52,7 +43,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sawarabi Mincho", monospace;
 }
 
 .row h2 {
@@ -61,7 +52,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sawarabi Mincho", monospace;
 }
 
 .row .logo_wrapper {
@@ -85,7 +76,7 @@ body {
 }
 
 .row code {
-  font-family: "HackGen", sans-serif;
+  font-family: monospace;
   font-size: 16px;
   line-height: 1.0;
   color: #FFF;
@@ -123,8 +114,122 @@ body {
   text-align: center;
 }
 
-hr {
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+pre, code {
+  font-family: monospace !important;
 }
 
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+h1.title {
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin: 20px;
+  font-family: monospace;
+}
+
+h1.title a {
+  text-shadow: 5px 5px 3px #ccc;
+}
+
+a {
+  color: #007bff;
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  p {
+    padding: 0 20px;
+  }
+}
+/*
+  h2 is decorated by the following code.
+  h2 is coloful and has a line.
+*/
+h2 {
+  position: relative;
+  margin: 20px 0;
+  padding: 0 0 0 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+h2 {
+  position: relative;
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+
+h2:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #a8d4ff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: #505050;
+  padding: 0.5em;
+  display: inline-block;
+  line-height: 1.3;
+  background: #dbebf8;
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;
+}
+
+h1:before {
+  background-image: url(../images/AkariSpecification.jpg);
+  background-size: cover;
+  background-position: center;
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.accessory {
+  height: 6px;
+  background-image: radial-gradient(
+    closest-side,
+    hsla(0, 0%, 50%, 1.0),
+    hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+}
+.accessory:after {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  display:block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width:  12px;
+  transform: rotate(45deg);
+  margin-top:  -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}

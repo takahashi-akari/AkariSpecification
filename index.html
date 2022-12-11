@@ -8,43 +8,28 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet" />
-    <!-- Franklin Gothic Medium -->
-    <link href="https://fonts.googleapis.com/css?family=Franklin+Gothic+Medium&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <title>Akari the testing framework for HPC</title>
   </head>
   <body>
     <div class="container main">
       <div class="row h1">
-        <div class="col-md-12">
-          <h1><a href="https://github.com/AkariSpecification">Akari the testing framework for HPC</a></h1>
-        </div>
-        <div class="row logo_wrapper">
-          <div class="col-md-12">
-            <img
-              src="./assets/images/AkariSpecification.jpg"
-              alt="AkariSpecification"
-              title="AkariSpeciifcation"
-              class="logo"
-            />
-            <img
-              src="./assets/images/AkariForest.jpg"
-              alt="AkariForest"
-              class="AkariForest"
-              title="AkariForest"
-            />
-          </div>
-        </div>
-        <hr />
-        <div class="row h2">
-          <div class="col-md-12">
-            <h2>
-              Akari the Testing Framework for optimizing and porting x86 Intrinsics to OpenPOWER
-            </h2>
-          </div>
+        <div class="col-md-12" style="text-align: center;">
+          <h1 class="title">
+            <a href="https://github.com/AkariSpecification">Akari the testing framework for HPC</a>
+          </h1>
         </div>
       </div>
-      <div class="row text">
+      <hr class="accessory" />
+      <div class="row h2">
+        <div class="col-md-12">
+          <h2>
+            Akari the Testing Framework for optimizing and porting x86 Intrinsics to OpenPOWER
+          </h2>
+        </div>
+      </div>
+     <div class="row text">
         <p>
           Intel x86-64 CPU are everywhere. From laptop PC to supercomputer.
           Intel x86-64 is CISC(Complex Instruction Set Computer) and very long
@@ -56,7 +41,7 @@
           So many supercomputer use RISC. But No 1 of market share of
           supercomputer is Intel because many Linux application is made for
           Intel. So if application for Intel x86-64 can run RISC like ARM or
-          OpenPOWER by very optimized way. It’s great advancement of Computer
+          OpenPOWER by very optimized way. It's great advancement of Computer
           Science and Technology. There are many SIMD Intel x86 intrinsic
           function.Intel intrinsic function runs only on Intel,not on OpenPOWER
           Systems.So we need to port Intel x86 intrinsic code to OpenPOWER
@@ -98,7 +83,7 @@ _mm_add_pd (__m128d __A, __m128d __B)
           </p>
         </div>
       </div>
-      <hr />
+      <hr class="accessory" />
       <div class="row h2">
         <div class="col-md-12">
           <h2>
@@ -109,8 +94,8 @@ _mm_add_pd (__m128d __A, __m128d __B)
       <div class="row code">
         <div class="col-md-12">
 <pre><code>
-AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Hayashizaki Masayuki           
-                                                                                            
+AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Takahashi Akari                    
+                                                                                                
 +-------------------+               +----------------------+               +-------------------+
 |  IntelCPU Server  |               |    Central Server    |               |  OpenPOWER Server |
 |       VPS         |               |         VPS          |               |     Minicloud     |
@@ -133,7 +118,7 @@ AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Hayashizaki Masayuk
                                                                                                 </code></pre>
         </div>
       </div>
-      <hr />
+      <hr class="accessory" />
       <div class="row h2">
         <div class="col-md-12">
           <h2>
@@ -156,8 +141,8 @@ AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Hayashizaki Masayuk
         <div class="col-md-12">
           <ul style="font-size: 20px; font-weight: bold;">
             <li>
-              <a href="https://github.com/hayashizaki-masayuki">
-                Hayashizaki Masayuki (Principal Developer)
+              <a href="https://github.com/takahashi-akari">
+                Takahashi Akari (Principal Developer)
               </a>
             </li>
           </ul>
@@ -167,12 +152,12 @@ AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Hayashizaki Masayuk
         <div class="col-md-12" style="padding:0 30px;">
           <p>We are only part of software developer in worldwide.</p>
           <p>
-            We are atheists, so we don't want to follow any religious leaders,
+            We don't want to follow any religious leaders,
             but sometimes we respect what they say.
           </p>
         </div>
       </div>
-      <hr />
+      <hr class="accessory" />
       <div class="row h2">
         <div class="col-md-12">
           <h2>Links</h2>
@@ -207,34 +192,17 @@ AkariSpecification Architecture v0.1.2 2022/08/30 09:00(JST) Hayashizaki Masayuk
           </ul>
         </div>
       </div>
-      <hr />
-      <div class="row h2">
-        <div class="col-md-12">
-          <h2>
-            OpenSource
-          </h2>
-        </div>
-      </div>
-      <div class="row opensource">
-        <div class="col-md-12">
-          <ul>
-            <li>
-              <a href="https://github.com/yuru7/HackGen/releases/tag/v2.6.3">
-                HackGen
-              </a>
-            </li>
+      <!-- footer -->
+      <hr class="accessory" />
+      <footer>
+      <div class="row footer">
+          <div class="col-md-12">
+            <p>
+              This website is developed by <a href="https://github.com/AkariSpecification">AkariSpecification</a>.
+            </p>
           </div>
         </div>
-      </div>
-      <!-- footer -->
-      <hr />
-      <div class="row footer">
-        <div class="col-md-12">
-          <p>
-            This website is developed by <a href="https://github.com/AkariSpecification">AkariSpecification</a>.
-          </p>
-        </div>
-      </div>
+      </footer>
     </div>
   </div>
   <!-- Boostrap -->
